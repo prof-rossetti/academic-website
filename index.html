@@ -37,12 +37,12 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
 
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#teaching">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#education">Education</a></li>
                     <!--li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li-->
                     <!--li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li-->
 
@@ -461,5 +461,29 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- Sending Events to Google Analytics -->
+        <script>
+
+            function navClicked(a){
+
+                //console.log("NAV FROM", window.location.hash)
+                //gtag("event", window.location.hash)
+
+                //var linkName = a.href.split("#")[1]
+
+                console.log(a.href, a.text)
+
+                // https://developers.google.com/analytics/devguides/collection/gtagjs/events
+                // https://support.google.com/analytics/answer/1033068#zippy=%2Cin-this-article
+                gtag("event", a.text)
+
+                gtag('event', 'nav_link_click', {
+                    'event_category': 'navigation',
+                    'event_label': a.text,
+                })
+            }
+
+        </script>
     </body>
 </html>
