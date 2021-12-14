@@ -80,6 +80,40 @@
   --georgetown-blue-rgb: 4, 30, 66;
   --georgetown-grey-rgb: 99, 102, 106;
 
+  /*
+
+    -- https://www.georgetown.edu/color-guide/#secondary-colors
+
+    Pantone 280
+      C:100 M:85 Y:5 K:22
+      R:1 G:33 B:105
+      Hex: #012169
+
+    Pantone 293
+      C:100 M:69 Y:0 K:4
+      R:0 G:61 B:165
+      Hex: #003DA5
+
+    Cool Gray 4
+      C:12 M:8 Y:9 K:23
+      R:187 G:188 B:188
+      Hex: #BBBCBC
+
+    Pantone 7527
+      C:3 M:4 Y:14 K:8
+      R:214 G:210 B:196
+      Hex: #D6D2C4
+
+  */
+
+  --georgetown-dark-blue: #012169;
+  --georgetown-royal-blue: #003DA5;
+  --georgetown-cool-grey: #BBBCBC;
+  --georgetown-light-grey: #D6D2C4;
+
+
+
+
 
 }
 
@@ -256,11 +290,11 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: var(--georgetown-dark-blue);
   text-decoration: underline;
 }
 a:hover {
-  color: #974a2d;
+  color: var(--georgetown-royal-blue);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
