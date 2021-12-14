@@ -7777,7 +7777,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--georgetown-dark-blue-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--georgetown-blue-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
