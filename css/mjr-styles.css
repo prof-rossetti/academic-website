@@ -62,6 +62,25 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+
+  /*
+
+    -- https://www.georgetown.edu/color-guide/
+
+    BLUE
+      R:4 G:30 B:66
+
+    GREY:
+      R:99 G:102 B:106
+  */
+
+  --georgetown-blue: #041E42;
+  --georgetown-grey: #63666A;
+
+  --georgetown-blue-rgb: 4, 30, 66;
+  --georgetown-grey-rgb: 99, 102, 106;
+
+
 }
 
 *,
@@ -7719,7 +7738,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--georgetown-blue-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -7810,7 +7829,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--georgetown-blue-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
