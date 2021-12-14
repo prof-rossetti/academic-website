@@ -111,6 +111,11 @@
   --georgetown-cool-grey: #BBBCBC;
   --georgetown-light-grey: #D6D2C4;
 
+  --georgetown-dark-blue-rgb: 1, 33, 105;
+  --georgetown-royal-blue-rgb: 0, 61, 165;
+  --georgetown-cool-grey-rgb: 187, 188, 188;
+  --georgetown-light-grey-rgb: 214, 210, 196;
+
 
 
 
@@ -7772,7 +7777,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--georgetown-blue-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--georgetown-dark-blue-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -11417,7 +11422,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.5rem solid var(--georgetown-grey);
   }
   #sideNav .navbar-collapse {
     display: flex;
