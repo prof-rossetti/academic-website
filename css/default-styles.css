@@ -62,64 +62,6 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
-
-  /*
-
-    -- https://www.georgetown.edu/color-guide/
-
-    BLUE
-      R:4 G:30 B:66
-
-    GREY:
-      R:99 G:102 B:106
-  */
-
-  --georgetown-blue: #041E42;
-  --georgetown-grey: #63666A;
-
-  --georgetown-blue-rgb: 4, 30, 66;
-  --georgetown-grey-rgb: 99, 102, 106;
-
-  /*
-
-    -- https://www.georgetown.edu/color-guide/#secondary-colors
-
-    Pantone 280
-      C:100 M:85 Y:5 K:22
-      R:1 G:33 B:105
-      Hex: #012169
-
-    Pantone 293
-      C:100 M:69 Y:0 K:4
-      R:0 G:61 B:165
-      Hex: #003DA5
-
-    Cool Gray 4
-      C:12 M:8 Y:9 K:23
-      R:187 G:188 B:188
-      Hex: #BBBCBC
-
-    Pantone 7527
-      C:3 M:4 Y:14 K:8
-      R:214 G:210 B:196
-      Hex: #D6D2C4
-
-  */
-
-  --georgetown-dark-blue: #012169;
-  --georgetown-royal-blue: #003DA5;
-  --georgetown-cool-grey: #BBBCBC;
-  --georgetown-light-grey: #D6D2C4;
-
-  --georgetown-dark-blue-rgb: 1, 33, 105;
-  --georgetown-royal-blue-rgb: 0, 61, 165;
-  --georgetown-cool-grey-rgb: 187, 188, 188;
-  --georgetown-light-grey-rgb: 214, 210, 196;
-
-
-
-
-
 }
 
 *,
@@ -295,11 +237,11 @@ sup {
 }
 
 a {
-  color: var(--georgetown-dark-blue);
+  color: #bd5d38;
   text-decoration: underline;
 }
 a:hover {
-  color: var(--georgetown-royal-blue);
+  color: #974a2d;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7777,7 +7719,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--georgetown-dark-blue-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -7868,7 +7810,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--georgetown-blue-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
@@ -11422,7 +11364,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid var(--georgetown-grey);
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11458,7 +11400,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: var(--georgetown-royal-blue);
+  background-color: #bd5d38;
 }
 
 .dev-icons {
