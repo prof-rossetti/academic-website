@@ -32,3 +32,22 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+//function to set the new theme
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+// function automatically invoked to set the theme when initially loading
+(function () {
+    if (localStorage.getItem('theme') === 'theme-georgetown') {
+        setTheme('theme-georgetown');
+    } 
+    else if (localStorage.getItem('theme') === 'theme-nyu'){
+        setTheme('theme-nyu');
+    }
+    else if (localStorage.getItem('theme') === 'theme-gw'){
+        setTheme('theme-gw');
+    }
+})();
