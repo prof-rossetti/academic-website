@@ -125,7 +125,7 @@
   --nyu-violet: #57068c;
   --nyu-ultra-violet: #8900e1;
   --nyu-black: #000000;
-  
+
   --nyu-deep-violet: #330662;
   --nyu-light-violet: #eee6f3;
   --nyu-medium-gray-1: #6d6d6d;
@@ -164,7 +164,7 @@
   --social-icon-hover: #8900e1;
 }
 
-.theme-gw {
+.theme-gwu {
   --link-color: #033C5A;
   --link-hover-color: #0190DB;
   --last-name-color: 168, 153, 104;
@@ -11529,7 +11529,7 @@ p.lead {
   position: absolute;
   right: 1em;
   top: .5em;
-  
+
 }
 
 .dropdown button{
@@ -11580,12 +11580,12 @@ p.lead {
 #color-button {
   width: 45px;
   height: 45px;
-  
+
 }
-    
+
 #color-button svg {
   right: 25px;
-  height: 25px; 
+  height: 25px;
   margin-left: -6px;
 }
 

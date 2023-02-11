@@ -41,7 +41,7 @@
                 <div>
                     <a href="#" id="color-item" onclick="setTheme('theme-georgetown')">Georgetown</a>
                     <a href="#" id="color-item" onclick="setTheme('theme-nyu')">NYU</a>
-                    <a href="#" id="color-item" onclick="setTheme('theme-gw')">GW</a>
+                    <a href="#" id="color-item" onclick="setTheme('theme-gwu')">GWU</a>
                 </div>
         </div>
 
@@ -549,9 +549,30 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-
-        <!-- Sending Events to Google Analytics -->
         <script>
+
+            //
+            // SETTING THE THEME (based on code by @lucy-xie)
+            //
+
+            function setTheme(themeName) {
+                console.log("SETTING THE THEME!", themeName)
+                // update local storage:
+                localStorage.setItem('theme', themeName)
+                // update the document:
+                document.documentElement.className = themeName
+            }
+
+            // set theme on initial page load:
+            var initialTheme = localStorage.getItem('theme') || 'theme-georgetown'
+            console.log("INITIAL THEME:", initialTheme)
+
+            setTheme(initialTheme)
+
+
+            //
+            // GOOGLE ANALYTICS EVENTS
+            //
 
             function navClicked(a){
 
@@ -571,6 +592,7 @@
                     'event_label': a.text,
                 })
             }
+
 
         </script>
     </body>
