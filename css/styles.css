@@ -11589,6 +11589,20 @@ p.lead {
   margin-left: -6px;
 }
 
+@media (max-width: 992px) {
+  #color-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .dropdown div {
+    position: fixed;
+    min-width: 5rem;
+    bottom: 4rem;
+    right: 1rem;
+  }
+}
+
 .dev-icons {
   font-size: 3rem;
 }
