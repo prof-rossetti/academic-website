@@ -1,5 +1,13 @@
 
+
 /*
+
+section#media, li#nav-media {
+    display:none;
+}
+
+
+
 section#experience, li#nav-experience {
     display:none;
 }
