@@ -15,6 +15,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
+        <link href="css/my-styles.css" rel="stylesheet" />
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-S24SNR3V6Z"></script>
         <script>
@@ -56,16 +58,14 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
 
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#teaching">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#partners">Partners</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#education">Education</a></li>
-                    <!--li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li-->
-                    <!--li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li-->
-
+                    <li id="nav-about" class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#about">About</a></li>
+                    <li id="nav-interests" class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#interests">Interests</a></li>
+                    <li id="nav-research" class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#research">Research</a></li>
+                    <li id="nav-teaching" class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#teaching">Teaching</a></li>
+                    <li id="nav-partners" class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#partners">Partners</a></li>
+                    <li id="nav-media" class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#media">In the News</a></li>
+                    <li id="nav-experience" class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#experience">Experience</a></li>
+                    <li id="nav-education" class="nav-item"><a class="nav-link js-scroll-trigger" onClick="navClicked(this)" href="#education">Education</a></li>
                 </ul>
             </div>
         </nav>
@@ -89,10 +89,15 @@
                         Adjunct Professor
                     </div>
                     <p class="lead mb-5">
-                        Michael Rossetti teaches data science and software development courses at Georgetown University and New York University.
-                        His research interests lie at the intersection of data science and political science, in applying machine learning techniques like natural language processing to problems related to public opinion research.
-                        Mike has worked as a polling data analyst for a winning US Presidential campaign, an analytics director for a Silicon Valley startup, and a technology consultant for the US Government.
-                        He received a Master of Science in Information Systems and a Bachelor in Business Administration from the George Washington University.
+
+                        Michael Rossetti is a data scientist and software engineer with over a decade of industry experience.
+                        He has worked as
+                            a data analyst for a winning US Presidential campaign,
+                            an analytics director for a Silicon Valley startup, and
+                            a technology consultant for the US Government.
+
+                        He conducts research in machine learning, and teaches courses in data science, computer science, and software development.
+
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" href="mailto:prof.mj.rossetti@gmail.com">
@@ -122,51 +127,6 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
 
-                    <!--div class="subheading mb-3">Interests</div-->
-                    <!--ul class="fa-ul mb-3 lh-lg">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Machine Learning
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Natural Language Processing
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            American Politics and Government
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Public Opinion Polling
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Online Misinformation and Disinformation
-                        </li>
-
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Systems Development Methodologies
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Software Testing and Verification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Human-Computer Interaction
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Social Networks
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                            Online Identity Verification
-                        </li>
-                    </ul-->
-
 
                     <!-- Columns start at 100% wide on mobile and adjust to 50% wide on desktop -->
                     <div class="row">
@@ -174,15 +134,19 @@
                             <ul class="fa-ul mb-0 lh-lg">
                                 <li>
                                     <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                                    Machine Learning
+                                    Artificial Intelligence / Machine Learning
                                 </li>
                                 <li>
                                     <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                                    Social and Information Networks
+                                    Deep Learning
                                 </li>
                                 <li>
                                     <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
-                                    Online Misinformation and Disinformation
+                                    Unsupervised Learning
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
+                                    Natural Language Processing
                                 </li>
                             </ul>
                         </div>
@@ -199,6 +163,10 @@
                                 <li>
                                     <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
                                     Information Security and Privacy
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-lightbulb"></i></span>
+                                    Social and Information Networks
                                 </li>
                             </ul>
                         </div>
@@ -221,14 +189,18 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Bots, Disinformation, and the First Trump Impeachment</h3>
 
-                            <div class="subheading mb-3">Working Paper</div>
+                            <!--div class="subheading mb-3">Working Paper</div-->
 
                             <p>
-                                With co-author <a href="https://www.zlisto.com">Prof. Tauhid Zaman</a> from Yale University,
+                                With co-author <a href="https://www.zlisto.com">Tauhid Zaman</a> from Yale University,
                                 we analyze the role of automated accounts called "bots" in spreading disinformation across social networks.
                             </p>
 
                             <ul class="fa-ul mb-3">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-book-open"></i></span>
+                                     <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283971">Paper (PLOS ONE)</a>
+                                </li>
                                 <li>
                                     <span class="fa-li"><i class="fas fa-book-open"></i></span>
                                      <a href="https://arxiv.org/abs/2204.08915">Paper (Arxiv)</a>
@@ -236,6 +208,10 @@
                                 <li>
                                     <span class="fa-li"><i class="fas fa-code"></i></span>
                                     <a href="https://github.com/s2t2/tweet-analysis-2020">Code</a>
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-database"></i></span>
+                                    <a href="https://github.com/s2t2/tweet-data-2020">Data</a>
                                 </li>
                                 <li>
                                     <span class="fa-li"><i class="fas fa-laptop-code"></i></span>
@@ -306,9 +282,6 @@
             <hr class="m-0" />
 
 
-
-
-
             <!-- Partners, Sponsors, Resources -->
             <section class="resume-section" id="partners">
                 <div class="resume-section-content">
@@ -330,6 +303,29 @@
             <hr class="m-0" />
 
 
+            <!-- In the Media -->
+            <section class="resume-section" id="media">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">In the News</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <ul class="fa-ul mb-0 lh-lg">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-newspaper"></i></span>
+                                    <a class="fst-italic" href="https://msb.georgetown.edu/news-story/ug-mba-electives-focus-on-data/">MSB Electives Focus on Data</a>, Georgetown McDonough News, September 2018.
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-newspaper"></i></span>
+                                    <a class="fst-italic" href="https://fcw.com/digital-government/2015/10/gsa-hackathon-2-twice-as-big-and-open-to-govvies/207195/">GSA Hackathon 2: twice as big and open to govvies</a>, Federal Computer Week (FCW), October 2015.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+
 
 
 
@@ -349,7 +345,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Presidential Innovation Fellow</h3>
                             <div class="subheading mb-3">US General Services Administration</div>
-                            <p>
+                            <p class="full-details">
                                 Created prototype applications and wrote technical documentation to help Federal government developers adopt a shared identity management platform called login.gov.
                                 Developed web applications in languages like <span class="fst-italic">Ruby</span>, <span class="fst-italic">Node.js</span>, and <span class="fst-italic">Go</span>.
                                 See also my <a href="https://presidentialinnovationfellows.gov/fellows/mike-rossetti/">Fellowship Profile</a>.
@@ -362,7 +358,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Data Engineer + Director of Analytics</h3>
                             <div class="subheading mb-3">Fandor (a film-streaming startup)</div>
-                            <p>
+                            <p class="full-details">
                                 Directed hiring and operations of a small team of data analysts, engineers, and scientists.
                                 Implemented my strategic vision for a company-wide business intelligence (BI) and analytics program, including the identification, prioritization, measurement, and ongoing self-service monitoring of key performance indicator (KPI) metrics.
                                 Developed a data warehouse application in <span class="fst-italic">Ruby on Rails</span>, to extract, transform, and load (ETL) data from production databases and external <span class="fst-italic">APIs</span> into a single, integrated <span class="fst-italic">SQL</span> database environment.
@@ -376,9 +372,9 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Media Data Analyst + Engineer</h3>
                             <div class="subheading mb-3">Democratic National Committee</div>
-                            <p>
+                            <p class="full-details">
                                 Analyzed political media and polling data, including over $750M in ad buys, on behalf of US Presidential and Congressional campaign clients (i.e. Obama for America, DSCC, DCCC).
-                                Identified qualitative and quantitative trends in opponents’ media and messaging strategies.
+                                Identified qualitative and quantitative trends in opponents' media and messaging strategies.
                                 Compared media expenditures against polling results to provide data-driven media-buying insights.
                                 Directed and oversaw the operations of an internal campaign video blogging system to inform campaign leadership and staff across the country about media and messaging trends in their respective localities.
                                 Contributed to a <span class="fst-italic">Ruby on Rails</span> application, wrote and maintained a library of <span class="fst-italic">SQL</span> scripts, and developed interactive data dashboards in <span class="fst-italic">Tableau</span> and <span class="fst-italic">JavaScript</span>.
@@ -391,10 +387,10 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Lead Polling Analyst</h3>
                             <div class="subheading mb-3">Obama for America</div>
-                            <p>Analyzed quantitative and qualitative results of campaign-sponsored polls and focus groups.
+                            <p class="full-details">Analyzed quantitative and qualitative results of campaign-sponsored polls and focus groups.
                                 Designed question language for US nationwide and "battleground state" surveys.
                                 Wrote <span class="fst-italic">SQL</span> scripts to integrate internal and external polling data into a unified dataset for analysis.
-                                Produced campaign polling insights in the form of <span class="fst-italic">Tableau</span> data dashboards and nightly reporting emails to campaign officials across the country.
+                                Produced campaign polling insights in the form of <span class="fst-italic">Tableau</span> data dashboards.
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">September 2011 - March 2012</span></div>
@@ -404,7 +400,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Technology Risk Consultant</h3>
                             <div class="subheading mb-3">Deloitte</div>
-                            <p>Advised clients at the Internal Revenue Service (IRS) on projects to mitigate their risk of cyber threats and ensure their systems’ compliance with Federal information security requirements.
+                            <p class="full-details">Advised clients at the Internal Revenue Service (IRS) on projects to mitigate their risk of cyber threats and ensure their systems’ compliance with Federal information security requirements.
                             Created and maintained an <span class="fst-italic">MS Access</span> database of systems and security metrics.
                             Streamlined reporting processes by developing automated data dashboards in <span class="fst-italic">Crystal Reports</span>.
                             </p>
@@ -416,7 +412,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Business Intelligence Analyst</h3>
                             <div class="subheading mb-3">US Treasury Department</div>
-                            <p>Identified and prioritized key performance indicators for measuring workforce performance and productivity across the department.
+                            <p class="full-details">Identified and prioritized key performance indicators for measuring workforce performance and productivity across the department.
                                 Wrote and maintained <span class="fst-italic">SQL</span> scripts, and created automated reporting dashboards in <span class="fst-italic">MS SQL Server</span>.
                             </p>
                         </div>
@@ -442,11 +438,10 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">The George Washington University</h3>
                             <div class="subheading mb-3">PhD in Systems Engineering and Engineering Management</div>
-                            <p>
-                                Take courses and conduct research related to machine learning and
-                                    <a href="https://gwtoday.gwu.edu/nsf-grant-supports-future-designers-%E2%80%98trustworthy%E2%80%99-artificial-intelligence">trustworthy AI systems</a>.
+                            <p class="full-details">
+                                Completed courses in data science and machine learning.
 
-                                Teach technical skills as a graduate teaching assistant.
+                                Taught technical skills as a graduate teaching assistant.
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2022 - Present</span></div>
@@ -456,7 +451,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">The George Washington University</h3>
                             <div class="subheading mb-3">Master of Science in Information Systems and Technology Management</div>
-                            <p>
+                            <p class="full-details">
                                 Completed advanced courses in databases, systems design, computer programming, and human-computer interaction.
 
                                 Taught technical skills as a graduate teaching assistant.
@@ -469,7 +464,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">The George Washington University</h3>
                             <div class="subheading mb-3">Bachelor of Business Administration</div>
-                            <p>Major in Business Administration includes coursework in math, calculus, statistics, economics, and management.
+                            <p class="full-details">Major in Business Administration includes coursework in math, calculus, statistics, economics, and management.
                                 Concentration in Information Systems includes coursework in databases, logic, and computer programming.
                                 Minor in Classical Studies includes coursework in contemporary politics and history, as well as ancient Greek and Roman mythology, language, philosophy, art, history, and culture.
                             </p>
