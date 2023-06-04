@@ -1,21 +1,25 @@
 
 
-/*
+/* using !important to override conflicting display:block style from style.css */
 
 section#media, li#nav-media {
-    display:none;
+    display:none !important;
 }
-
-
 
 section#experience, li#nav-experience {
-    display:none;
+    display:none !important;
 }
-
 
 section#education, li#nav-education {
-    display:none;
+    display:none !important;
 }
+
+
+/*
+
+
+
+
 
 
 
