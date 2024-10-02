@@ -146,6 +146,7 @@
   --text-title-color: #343a40;
   --bg-primary: 4, 30, 66;
   --profile-border: #63666A;
+  --btn-primary-text-color: #ffffff;
   --social-icon-bg: #495057;
   --social-icon-hover: #003DA5;
 }
@@ -159,7 +160,8 @@
   --primary-text-color: #404040;
   --text-title-color: #000000;
   --bg-primary: 88, 6, 142;
-  --profile-border: #ffffff/*#f4ec51*/;
+  --profile-border: #ffffff;
+  --btn-primary-text-color: #ffffff;
   --social-icon-bg: #330662;
   --social-icon-hover: #8900e1;
 }
@@ -173,6 +175,7 @@
   --text-title-color: #033C5A;
   --bg-primary: 0, 59, 92;
   --profile-border: #AA9868;
+  --btn-primary-text-color: #ffffff;
   --social-icon-bg: #033C5A;
   --social-icon-hover: #0190DB;
 }
@@ -3144,6 +3147,7 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
+/*
 .btn-primary {
   color: #000;
   background-color: #bd5d38;
@@ -3173,6 +3177,46 @@ textarea.form-control-lg {
   background-color: #bd5d38;
   border-color: #bd5d38;
 }
+*/
+
+/* BUTTON MATCH ACTIVE THEME */
+
+.btn-primary {
+  color: var(--btn-primary-text-color);
+  background-color: rgba(var(--bg-primary), 1) !important; /* Using the theme variable */
+  border-color: rgba(var(--bg-primary), 1) !important;
+}
+
+.btn-primary:hover {
+  color: var(--btn-primary-text-color);
+  background-color: rgba(var(--bg-primary), 0.85) !important; /* Slightly lighter on hover */
+  border-color: rgba(var(--bg-primary), 0.85) !important;
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: var(--btn-primary-text-color);
+  background-color: rgba(var(--bg-primary), 0.85) !important;
+  border-color: rgba(var(--bg-primary), 0.85) !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bg-primary), 0.5);
+}
+
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+  color: var(--btn-primary-text-color);
+  background-color: rgba(var(--bg-primary), 0.75) !important;
+  border-color: rgba(var(--bg-primary), 0.75) !important;
+}
+
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--bg-primary), 0.5);
+}
+
+.btn-primary:disabled, .btn-primary.disabled {
+  color: var(--btn-primary-text-color);
+  background-color: rgba(var(--bg-primary), 1) !important; /* Keeping the original background color */
+  border-color: rgba(var(--bg-primary), 1) !important;
+}
+
+
 
 .btn-secondary {
   color: #fff;

@@ -31,3 +31,8 @@ p.full-details {
 span.tech-details {
     display: none;
 }
+
+
+p.education-details {
+    display: none;
+}
