@@ -1,5 +1,16 @@
 
 
+/* consistent card image heights */
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* adjust as needed */
+  object-fit: cover;
+}
+
+
+
+
 /* using !important to override conflicting display:block style from style.css */
 
 section#media, li#nav-media {
