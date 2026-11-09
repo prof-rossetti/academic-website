@@ -1,0 +1,95 @@
+
+
+/* consistent card image heights */
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* adjust as needed */
+  object-fit: cover;
+}
+
+
+
+
+/* using !important to override conflicting display:block style from style.css */
+
+section#media, li#nav-media {
+    display:none !important;
+}
+
+/*
+
+section#experience, li#nav-experience {
+    display:none !important;
+}
+
+section#education, li#nav-education {
+    display:none !important;
+}
+
+
+
+p.full-details {
+    display: none;
+}
+
+
+*/
+
+
+
+
+span.tech-details {
+    display: none;
+}
+
+
+p.education-details {
+    display: none;
+}
+
+/* Company / Organization logo badges in Experience section */
+.company-logo-badge {
+    width: 52px;
+    height: 52px;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+.company-logo-badge img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Card container for section images */
+.entry-img-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.entry-img-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.entry-img-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Prevent flex children from overflowing on smaller screens */
+#experience .d-flex.gap-3,
+#experience .d-flex.gap-3 > .flex-grow-1,
+#teaching .flex-grow-1 {
+    min-width: 0;
+}
