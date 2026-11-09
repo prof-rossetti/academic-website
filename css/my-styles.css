@@ -1,9 +1,11 @@
+
+
 /* consistent card image heights */
 
 .card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px; /* adjust as needed */
+  object-fit: cover;
 }
 
 
@@ -11,9 +13,8 @@
 
 /* using !important to override conflicting display:block style from style.css */
 
-section#media,
-li#nav-media {
-    display: none !important;
+section#media, li#nav-media {
+    display:none !important;
 }
 
 /*
@@ -46,14 +47,3 @@ span.tech-details {
 p.education-details {
     display: none;
 }
-
-/*
-p.teaching-details {
-    display: none;
-}
-
-
-p.experience-details {
-    display: none;
-}
-*/
